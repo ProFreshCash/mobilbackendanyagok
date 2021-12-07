@@ -14,5 +14,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProFreshCash/mobilbackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ProFreshCash/mobilbackend/issues"
+  },
+  "homepage": "https://github.com/ProFreshCash/mobilbackend#readme"
 }
