@@ -35,6 +35,27 @@ app.get('/anyagok', (req, res) => {
 
   
   })
+
+  app.post('/uj_rendeles_fel', (req, res) => {
+    var mysql = require('mysql')
+    var connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'anyagok'
+    })
+    connection.connect()
+
+    connection.query('INSERT INTO rendeles VAlUES (NULL,"'+req.body.bev1+'","'+req.body.bev2+'","'+req.body.bev3+'","'+req.body.bev4+'", 0)', function (err, rows, fields) {
+      if (err) throw err
+    
+      res.send("Rendelés sikeresen leadva!");
+    })
+    
+    connection.end()
+
+  })
+
   app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
   })
