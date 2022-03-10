@@ -23,7 +23,32 @@ app.get('/anyagok', (req, res) => {
     
     connection.connect()
     
-    connection.query('SELECT * from anyag', function (err, rows, fields) {
+    connection.query('SELECT `anyag_id`,`anyag_neve`,anyag_fajtak.anyag_fajtaja,`anyag_leiras`,`anyag_merete`,`anyag_ar`,`anyag_kep` FROM `anyag` INNER JOIN anyag_fajtak ON anyag.anyag_fajtaja = anyag_fajtak.anyag_fajta_id', function (err, rows, fields) {
+      if (err) throw err
+    
+      console.log(rows)
+      res.send(rows)
+    })
+    
+    connection.end()
+
+
+  
+  })
+
+  app.get('/fajtak', (req, res) => {
+
+    var mysql = require('mysql')
+    var connection = mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'anyagok'
+    })
+    
+    connection.connect()
+    
+    connection.query('SELECT * from anyag_fajtak', function (err, rows, fields) {
       if (err) throw err
     
       console.log(rows)
