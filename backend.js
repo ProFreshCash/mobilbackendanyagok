@@ -71,7 +71,7 @@ app.get('/anyagok', (req, res) => {
     })
     connection.connect()
 
-    connection.query('INSERT INTO rendeles VAlUES (NULL,"'+req.body.bev1+'","'+req.body.bev2+'","'+req.body.bev3+'","'+req.body.bev4+'", 0)', function (err, rows, fields) {
+    connection.query('INSERT INTO rendeles VAlUES (NULL,"'+req.body.bev1+'",'+req.body.bev2+',"'+req.body.bev3+'","'+req.body.bev4+'", 0)', function (err, rows, fields) {
       if (err) throw err
     
       res.send("Rendelés sikeresen leadva!");
