@@ -71,7 +71,7 @@ app.get('/anyagok', (req, res) => {
     })
     connection.connect()
 
-    connection.query('INSERT INTO rendeles VAlUES (NULL,"'+req.body.bev1+'",'+req.body.bev2+',"'+req.body.bev3+'","'+req.body.bev4+'", 0)', function (err, rows, fields) {
+    connection.query('INSERT INTO rendeles VAlUES (NULL,"'+req.body.bev1+'",'+req.body.bev2+',"'+req.body.bev3+'",'+req.body.bev4+', 0)', function (err, rows, fields) {
       if (err) throw err
     
       res.send("Rendelés sikeresen leadva!");
@@ -79,6 +79,31 @@ app.get('/anyagok', (req, res) => {
     
     connection.end()
 
+  })
+
+  app.get('/anyagnevek', (req, res) => {
+
+    var mysql = require('mysql')
+    var connection = mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'anyagok'
+    })
+    
+    connection.connect()
+    
+    connection.query('SELECT `anyag_id`,`anyag_neve` from anyag', function (err, rows, fields) {
+      if (err) throw err
+    
+      console.log(rows)
+      res.send(rows)
+    })
+    
+    connection.end()
+
+
+  
   })
 
   app.listen(port, () => {
