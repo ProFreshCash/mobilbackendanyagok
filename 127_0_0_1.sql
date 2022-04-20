@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Ápr 05. 02:04
+-- Létrehozás ideje: 2022. Ápr 20. 23:25
 -- Kiszolgáló verziója: 10.4.14-MariaDB
 -- PHP verzió: 7.4.10
 
@@ -44,18 +44,18 @@ CREATE TABLE `anyag` (
 --
 
 INSERT INTO `anyag` (`anyag_id`, `anyag_neve`, `anyag_leiras`, `anyag_fajtaja`, `anyag_merete`, `anyag_ar`, `anyag_kep`) VALUES
-(1, 'Gerenda', 'Lucfenyőből\r\nFűrészelt\r\nNedvességtartalma 18% +/-2% PEFC-tanúsítvány\r\n\r\nA gerenda széles körű felhasználást tesz lehetővé minden olyan munkához, ami minőségi, stabil faanyagot igényel. Natúr felületű, amelynek kezelése a felhasználást követően ajánlott.\r\n\r\nEttől eltérő hosszméretek külön megállapodás szerint. ', 1, '10x15x500 cm', 15000, 'gerenda.jpg'),
-(2, 'Léc', 'Szlovák importból származó légszáraz, egyenes vágású, méretpontos Bramac léc hibátlan minőségben.\r\n\r\nSzármazása: •Északi termőhely (Komi, Ural régió) \r\n•Közép-európai termőhely (Magyarország, Szlovákia, Románia, Ukrajna)\r\n\r\nElőnyök:\r\n•Természetes alapanyag, felhasználása környezetkímélő \r\n•Dekoratív, esztétikus, környezetének kellemes hangulatot ad \r\n•Könnyen megmunkálható \r\n•Kemény \r\n•Víznek kitett helyen is jól felhasználható \r\n•Káros anyag kibocsátás mentes\r\n•Északi eredet esetén kiemelkedően kedvező struktúra, kedvező mechanikai - fizikai jellemzők\r\n', 1, '5x5x400 cm', 2400, 'léc.jpg'),
-(3, 'Deszka', 'A gyalult deszka olyan faanyag, ami négy oldalán meg van gyalulva (még az élek is). A gyalult deszka kiválóan alkalmas paraszt mennyezetnek, párkánynak, kerítésnek, homlokzatokhoz, de akár asztalokhoz, vagy székekhez is. A gyalult deszka kültéren való felhasználásakor érdemes a felületet favédőszerrel kezelni, a fa megóvása érdekében. A nálunk kapható gyalult deszka termékeket minden esetben válogatott faanyagból készülnek.  Erős, szép szálú és univerzális felhasználású fenyő deszka.', 1, '2,5x15x600 cm', 4500, 'deszka.jpg'),
-(4, 'Putnoki kisméretű tömör tégla', 'Nagyszilárdságú, kisméretű tömör tégla.\r\n\r\nAlkalmazási előnyök: \r\n\r\n•Kiváló nyomószilárdság, 40 N/mm2 \r\n\r\n•Ideális kifejezetten nagy teherigénybevételű oszlopokhoz, falakhoz\r\n\r\n•Hagyományos falazási technológia\r\n\r\n•Ideális kiegészítő szerkezetekhez\r\n\r\n•Nem éghető (A1)\r\n\r\nAlkalmazható kötőanyag: hagyományos falazóhabarcs.\r\nKiegészítő falszerkezetek építésére, vakolva időjárásálló\r\n, kerámia tömör tégla\r\n', 4, '6,5x12x25 cm', 150, 'kistomtegla.jpg'),
-(5, 'B 30-as blokktégla', 'Fokozott hőtechnikai követelmények nélküli hagyományos falazótégla. Külső és belső teherhordó falak építésére, 30 cm-es falvastagsággal építve alkalmazható.\r\n\r\nNyomószilárdság (átlag érték):	14 N/mm2\r\n\r\nCsomagolás:	168 db/raklap\r\n\r\nAnyagszükséglet:	35 db/m2, 116 db/m3', 4, '30x17,5x14 cm', 250, 'b30.jpg'),
-(6, 'Pápateszéri Bakonytherm Kettősméretű-soklyukú falazóblokk ', 'Súly: 3,7 kg/db \r\nKiszerelés: 252 db/raklap', 4, '25x12x14 cm', 135, 'papa.jpg'),
-(7, 'Zalakerámia Marmit falicsempe', 'Megnevezés: falicsempe\r\n\r\nSzíne: bézs\r\n\r\nFelülete: fényes\r\n\r\nAlkalmazható: beltér\r\n\r\nDobozolás: \r\n-30 db/doboz\r\n-1,5 m2/doboz\r\n-17,3 kg/doboz', 2, '20x25 cm', 2700, 'marmitcsempe.jpg'),
-(8, 'Cersanit Indira dekorcsempe', 'Kiszerelés:\r\n1,08m2/cs ', 2, '20x60 cm', 4320, 'cersanit.jpg'),
-(9, 'Lépcsőlap KRONOS GRES, matt,\r\nfagyálló, kültéri, K300\r\n', 'Szín és mintázat: bézs,gránitőrleményes mintával\r\n\r\nTulajdonságok:\r\n- kültéri \r\n- matt \r\n- fagyálló \r\n \r\nKiszerelés:\r\n1,62m2/csomag\r\n5680ft/m2', 2, '30x30x0,7 cm', 5860, 'kronos.jpg'),
-(10, 'C16/20-X0v(H)-24-F2 mixer beton', 'Tulajdonságok: \r\n\r\nNincs korróziós vagy kimaródási kockázat.\r\nA korróziónak vagy rozsdásodásnak nincs kockázata.\r\nKáros környezeti hatás nem éri a szilárdsági szempontból alárendelt betont.\r\nKáros környezeti hatás nem éri a betont. Karbonátosodáson kívül egyéb káros környezeti hatás nem éri a vasalt betont. ', 3, 'Adott rendelt mennyiség', 24000, 'noimage.jpg'),
-(11, 'C20/25-XC1-24-F2 mixer beton', 'Tulajdonságok:\r\n\r\nKarbonátosodás okozta korrózió.\r\n\r\nSzáraz vagy tartósan nedves.\r\nNedves, ritkán száraz.\r\nMérséklten nedves.\r\nVáltakozva nedves és száraz.', 3, 'Adott rendelt mennyiség', 25000, 'noimage.jpg'),
-(12, 'C30/37-XC2-24-F2 mixer beton', 'Tulajdonságok:\r\n\r\nKarbonátosodás okozta korrózió.\r\n\r\nSzáraz vagy tartósan nedves.\r\nNedves, ritkán száraz.\r\nMérséklten nedves.\r\nVáltakozva nedves és száraz.', 3, 'Adott rendelt mennyiség', 27000, 'noimage.jpg');
+(1, 'Gerenda', '\r\n- Lucfenyőből\r\n- Fűrészelt\r\n- Nedvességtartalma 18% +/-2% PEFC-tanúsítvány\r\n\r\nA gerenda széles körű felhasználást tesz lehetővé minden olyan munkához, ami minőségi, stabil faanyagot igényel. Natúr felületű, amelynek kezelése a felhasználást követően ajánlott.\r\n\r\nEttől eltérő hosszméretek külön megállapodás szerint. ', 1, '10x15x500 cm', 15000, 'gerenda.jpg'),
+(2, 'Léc', 'Szlovák importból származó légszáraz, egyenes vágású, méretpontos Bramac léc hibátlan minőségben.\r\n\r\nSzármazása: \r\n\r\n•Északi termőhely (Komi, Ural régió) \r\n•Közép-európai termőhely (Magyarország, Szlovákia, Románia, Ukrajna)\r\n\r\nElőnyök:\r\n\r\n•Természetes alapanyag, felhasználása környezetkímélő \r\n•Dekoratív, esztétikus, környezetének kellemes hangulatot ad \r\n•Könnyen megmunkálható \r\n•Kemény \r\n•Víznek kitett helyen is jól felhasználható \r\n•Káros anyag kibocsátás mentes\r\n•Északi eredet esetén kiemelkedően kedvező struktúra, kedvező mechanikai - fizikai jellemzők', 1, '5x5x400 cm', 2400, 'léc.jpg'),
+(3, 'Deszka', '  A gyalult deszka olyan faanyag, ami négy oldalán meg van gyalulva (még az élek is). A gyalult deszka kiválóan alkalmas paraszt mennyezetnek, párkánynak, kerítésnek, homlokzatokhoz, de akár asztalokhoz, vagy székekhez is. A gyalult deszka kültéren való felhasználásakor érdemes a felületet favédőszerrel kezelni, a fa megóvása érdekében. A nálunk kapható gyalult deszka termékeket minden esetben válogatott faanyagból készülnek.  Erős, szép szálú és univerzális felhasználású fenyő deszka.', 1, '2,5x15x600 cm', 4500, 'deszka.jpg'),
+(4, 'Putnoki kisméretű tömör tégla', ' Nagyszilárdságú, kisméretű tömör tégla.\r\n\r\nAlkalmazási előnyök: \r\n\r\n•Kiváló nyomószilárdság, 40 N/mm2 \r\n\r\n•Ideális kifejezetten nagy teherigénybevételű oszlopokhoz, falakhoz\r\n\r\n•Hagyományos falazási technológia\r\n\r\n•Ideális kiegészítő szerkezetekhez\r\n\r\n•Nem éghető (A1)\r\n\r\nAlkalmazható kötőanyag: hagyományos falazóhabarcs.\r\nKiegészítő falszerkezetek építésére, vakolva időjárásálló, kerámia tömör tégla\r\n', 4, '6,5x12x25 cm', 150, 'kistomtegla.jpg'),
+(5, 'B 30-as blokktégla', ' Fokozott hőtechnikai követelmények nélküli hagyományos falazótégla. Külső és belső teherhordó falak építésére, 30 cm-es falvastagsággal építve alkalmazható.\r\n\r\nNyomószilárdság (átlag érték): 14 N/mm2\r\n\r\nCsomagolás: 168 db/raklap\r\n\r\nAnyagszükséglet: 35 db/m2, 116 db/m3', 4, '30x17,5x14 cm', 250, 'b30.jpg'),
+(6, 'Pápateszéri Bakonytherm Kettősméretű-soklyukú falazóblokk ', '\r\n\r\nSúly: 3,7 kg/db \r\n\r\nKiszerelés: 252 db/raklap', 4, '25x12x14 cm', 135, 'papa.jpg'),
+(7, 'Zalakerámia Marmit falicsempe', '\r\n\r\nMegnevezés: falicsempe\r\n\r\nSzíne: bézs\r\n\r\nFelülete: fényes\r\n\r\nAlkalmazható: beltér\r\n\r\nDobozolás: \r\n-30 db/doboz\r\n-1,5 m2/doboz\r\n-17,3 kg/doboz', 2, '20x25 cm', 2700, 'marmitcsempe.jpg'),
+(8, 'Cersanit Indira dekorcsempe', '\r\n\r\nKiszerelés:\r\n1,08m2/cs ', 2, '20x60 cm', 4320, 'cersanit.jpg'),
+(9, 'Lépcsőlap KRONOS GRES, matt,\r\nfagyálló, kültéri, K300\r\n', '\r\n\r\nSzín és mintázat: bézs,gránitőrleményes mintával\r\n\r\nTulajdonságok:\r\n- kültéri \r\n- matt \r\n- fagyálló \r\n \r\nKiszerelés:\r\n1,62m2/csomag\r\n5680ft/m2', 2, '30x30x0,7 cm', 5860, 'kronos.jpg'),
+(10, 'C16/20-X0v(H)-24-F2 mixer beton', '\r\n\r\nTulajdonságok: \r\n\r\nNincs korróziós vagy kimaródási kockázat.\r\nA korróziónak vagy rozsdásodásnak nincs kockázata.\r\nKáros környezeti hatás nem éri a szilárdsági szempontból alárendelt betont.\r\nKáros környezeti hatás nem éri a betont. Karbonátosodáson kívül egyéb káros környezeti hatás nem éri a vasalt betont. ', 3, 'Adott rendelt mennyiség', 24000, 'noimage.jpg'),
+(11, 'C20/25-XC1-24-F2 mixer beton', '\r\n\r\nTulajdonságok:\r\n\r\nKarbonátosodás okozta korrózió.\r\n\r\nSzáraz vagy tartósan nedves.\r\nNedves, ritkán száraz.\r\nMérséklten nedves.\r\nVáltakozva nedves és száraz.', 3, 'Adott rendelt mennyiség', 25000, 'noimage.jpg'),
+(12, 'C30/37-XC2-24-F2 mixer beton', '\r\n\r\nTulajdonságok:\r\n\r\nKarbonátosodás okozta korrózió.\r\n\r\nSzáraz vagy tartósan nedves.\r\nNedves, ritkán száraz.\r\nMérséklten nedves.\r\nVáltakozva nedves és száraz.', 3, 'Adott rendelt mennyiség', 27000, 'noimage.jpg');
 
 -- --------------------------------------------------------
 
@@ -100,9 +100,14 @@ CREATE TABLE `rendeles` (
 INSERT INTO `rendeles` (`rendeles_id`, `rendelo_neve`, `rendelt_termek_fajtaja`, `rendelt_termek_neve`, `rendeles_mennyisege`, `allapot`) VALUES
 (1, 'Sprint Elek', 1, 'Deszka', 15, 1),
 (2, 'Igen Nem', 1, 'Léc', 25, 2),
-(3, 'Matuka', 4, 'Tégla', 206, 0),
-(4, 'Mecqueen', 3, 'szilánkos darabos törött csempe', 56, 0),
-(9, '667', 1, 'Gerenda', 77, 0);
+(3, 'Matuka', 4, 'Tégla', 206, 1),
+(14, 'Isten', 2, 'Cersanit Indira dekorcsempe', 20, 0),
+(15, 'Istenes Bence', 1, 'Deszka', 20, 0),
+(16, 'Sanyi', 1, 'Deszka', 25, 0),
+(17, 'Peti', 2, 'Lépcsőlap KRONOS GRES, matt,\r\nfagyálló, kültéri, K300\r\n', 150, 2),
+(18, 'FATJESUS', 1, 'Deszka', 15, 1),
+(19, 'FATASS', 1, 'Léc', 12, 0),
+(20, 'sda', 1, 'Deszka', 65, 0);
 
 -- --------------------------------------------------------
 
@@ -225,7 +230,7 @@ ALTER TABLE `user_roles`
 -- AUTO_INCREMENT a táblához `anyag`
 --
 ALTER TABLE `anyag`
-  MODIFY `anyag_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `anyag_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT a táblához `anyag_fajtak`
@@ -237,7 +242,7 @@ ALTER TABLE `anyag_fajtak`
 -- AUTO_INCREMENT a táblához `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `rendeles_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT a táblához `users`
